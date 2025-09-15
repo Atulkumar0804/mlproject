@@ -1,0 +1,47 @@
+# Create a new conda environment in the current directory with Python 3.8
+conda create -p venv python==3.8 -y
+
+# Activate the virtual environment to isolate project dependencies
+conda activate venv/
+
+# Initialize a new Git repository in the current directory
+git init
+
+# Stage the README.md file for the first commit
+git add README.md
+
+# Set your global Git username for commit attribution
+git config --global user.name "your name"
+
+# Set your global Git email for commit attribution
+git config --global user.email "your email"
+
+# Create the initial commit with a descriptive message
+git commit -m "first commit"
+
+# Check the current status of the Git repository (tracked/untracked files)
+git status
+
+# Rename the default branch from 'master' to 'main' (modern Git convention)
+git branch -M main
+
+# Add the remote GitHub repository as the origin for pushing/pulling code
+git remote add origin https://github.com/Atulkumar0804/mlproject.git
+
+# Verify the remote repository URL is correctly configured
+git remote -v
+
+# Push the local main branch to GitHub and set it as the default upstream
+git push -u origin main
+
+# Create a .gitignore file with Python-specific ignore patterns to exclude unwanted files
+create the new file in git with name .gitignore and language as python
+
+# Pull any changes from the remote repository to keep local repo in sync
+git pull
+
+# Create requirements.txt (lists project dependencies) and setup.py (defines package installation)
+now create the file requirements.txt and setup.py in the folder as mentioned
+
+# Install all Python packages listed in requirements.txt including the current project as editable
+pip install -r requirements.txt
